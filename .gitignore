@@ -1,0 +1,18 @@
+# Virtual environment
+venv/
+
+# Large dataset images (keeps data.txt and steering wheel images but ignores dataset photos)
+data/driving_dataset/*.jpg
+data/driving_dataset/*.png
+
+# Model checkpoints and logs
+model_traning/train_steering_angle/save/
+model_traning/train_steering_angle/logs/
+saved_models/
+
+# Python cache files
+**/__pycache__/
+*.pyc
+
+# Local IDE configuration
+.vscode/
