@@ -1,18 +1,43 @@
-# Virtual environment
+# Python cache and tooling
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
 venv/
+env/
+.env
+.env.*
+!.env.example
 
-# Large dataset images (keeps data.txt and steering wheel images but ignores dataset photos)
-data/driving_dataset/*.jpg
-data/driving_dataset/*.png
+# Jupyter temporary files
+.ipynb_checkpoints/
 
-# Model checkpoints and logs
-model_traning/train_steering_angle/save/
-model_traning/train_steering_angle/logs/
-saved_models/
-
-# Python cache files
-**/__pycache__/
-*.pyc
-
-# Local IDE configuration
+# OS and editor files
+.DS_Store
+Thumbs.db
 .vscode/
+
+# Training data and generated ML artifacts
+data/**
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+*.pb
+*.pkl
+*.joblib
+saved_models/**
+model_training/**/logs/
+model_training/**/save/
+
+# Experiment and runtime output
+runs/
+wandb/
+*.log
+logs/

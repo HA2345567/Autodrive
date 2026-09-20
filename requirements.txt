@@ -1,24 +1,8 @@
-# AutoDrive Autonomous Perception & Control System Dependencies
-# Compatible with Python 3.9 - 3.13
 
-# Deep Learning Frameworks
-tensorflow>=2.15.0; sys_platform != 'darwin' or platform_machine != 'arm64'
-torch>=2.0.0
-torchvision>=0.15.0
-
-# Computer Vision & Real-Time Object Detection
-ultralytics>=8.3.0
-supervision>=0.18.0
-opencv-python>=4.8.0
-lap>=0.5.12
-
-# Numerical Computing & Telemetry Visualization
-numpy>=1.24.0
-scipy>=1.10.0
-matplotlib>=3.7.0
-pillow>=9.5.0
-tqdm>=4.65.0
-
-# Build & Packaging
-setuptools>=61.0.0
-wheel>=0.40.0
+tensorflow
+opencv-python
+numpy
+pandas
+matplotlib
+keras
+ultralytics

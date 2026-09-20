@@ -2,15 +2,17 @@ import os
 import sys
 
 # Add project root directory to sys.path to allow proper imports
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..')))
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
 
 # pyrefly: ignore [missing-import]
 import tensorflow.compat.v1 as tf
-tf.disable_v2_behavior()
+tf.compat.v1.disable_v2_behavior()
 
 # pyrefly: ignore [missing-import]
 from src.models import model
-from src.training.train_steering_angle import driving_data
+from model_training.train_steering_angle import driving_data
 
 class DataLogger:
     def __init__(self, log_path):

@@ -1,22 +1,42 @@
+import os
+import warnings
+import logging
 
+# Suppress TensorFlow C++ and Python logging/deprecation warnings
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
+warnings.filterwarnings("ignore")
+try:
+    import absl.logging
+    handler = getattr(absl.logging, "_absl_handler", None)
+    if handler is not None:
+        logging.root.removeHandler(handler)
+    absl.logging.set_verbosity("error")
+    absl.logging.set_stderrthreshold("error")
+except Exception:
+    pass
+
+# pyrefly: ignore [missing-import]
 import tensorflow.compat.v1 as tf
-tf.disable_v2_behavior()
+tf.compat.v1.disable_v2_behavior()
+logging.getLogger("tensorflow").setLevel(logging.ERROR)
 
-import scipy.io as sio
 
 def weight_variable(shape):
-    initial = tf.truncated_normal(shape, stddev=0.1)
-    return tf.Variable(initial)
+    initial = tf.compat.v1.truncated_normal(shape, stddev=0.1)
+    return tf.compat.v1.Variable(initial)
+
 
 def bias_variable(shape):
     initial = tf.constant(0.1, shape=shape)
-    return tf.Variable(initial)
+    return tf.compat.v1.Variable(initial)
+
 
 def conv2d(x, W, stride):
     return tf.nn.conv2d(x, W, strides=[1, stride, stride, 1], padding='VALID')
 
-x = tf.placeholder(tf.float32, shape=[None, 66, 200, 3])
-y_= tf.placeholder(tf.float32, shape=[None, 1])
+
+x = tf.compat.v1.placeholder(tf.float32, shape=[None, 66, 200, 3])
+y_ = tf.compat.v1.placeholder(tf.float32, shape=[None, 1])
 
 x_image = x
 
