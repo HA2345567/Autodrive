@@ -1,0 +1,26 @@
+# Keep document and model bytes intact across Windows and other platforms.
+* text=auto
+*.pdf binary
+*.pptx binary
+*.docx binary
+*.mp4 binary
+*.npz binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ttf binary
+*.pt binary
+*.pth binary
+*.ckpt binary
+*.onnx binary
+
+# Use stable line endings for source and documentation.
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.mjs text eol=lf
+*.cjs text eol=lf
+*.mmd text eol=lf
+*.svg text eol=lf
+*.toml text eol=lf
+*.txt text eol=lf

@@ -1,0 +1,193 @@
+{
+  "input": "D:\\Documents\\AutoDrive\\output\\pdf\\Autodrive_Research_Paper_Completed.pdf",
+  "output": "D:\\Documents\\AutoDrive\\output\\pdf\\AutoDrive_Research_Paper_Reference_Style.pdf",
+  "reference": "D:/Documents/Object_detection.pdf",
+  "pages": 23,
+  "layout": {
+    "text_width_pt": 370.63,
+    "odd_left_pt": 100.1,
+    "even_left_pt": 124.55,
+    "top_pt": 78,
+    "bottom_margin_pt": 56,
+    "footer_baseline_from_bottom_pt": 28,
+    "body_font_pt": 9.96,
+    "leading_pt": 11.96,
+    "color": "black text and diagrams; original color images and graphs"
+  },
+  "locations": [
+    {
+      "text": "I. Introduction",
+      "page": 1
+    },
+    {
+      "text": "Fig. 1. Overall workflow of Autodrive. A single front-camera frame feeds three parallel branches (detection, lane segmentation, steering regression) whose outputs are combined by an integration layer.",
+      "page": 3
+    },
+    {
+      "text": "II. Literature Review",
+      "page": 3
+    },
+    {
+      "text": "Table I. Representative approaches and their position relative to Autodrive",
+      "page": 4
+    },
+    {
+      "text": "III. Materials And Methods",
+      "page": 4
+    },
+    {
+      "text": "Table II(a). Dataset distribution: COCO-10 instances per class and split (images: 8,080 / 975 / 525).",
+      "page": 5
+    },
+    {
+      "text": "Table II(b). Dataset distribution: TuSimple lane dataset as used in this work.",
+      "page": 5
+    },
+    {
+      "text": "Fig. 2. Label verification samples. Left: TuSimple lane ribbons overlaid on a validation frame (green fill, red outline). Right: COCO-10 bounding boxes drawn from the converted YOLO label files. In both cases the labels sit directly on the objects, confirming the coordinate conversions.",
+      "page": 6
+    },
+    {
+      "text": "Fig. 3. Training-set class distribution of COCO-10 (log scale), showing the 24:1 spread between the most and least frequent classes.",
+      "page": 6
+    },
+    {
+      "text": "IV. Proposed Method",
+      "page": 7
+    },
+    {
+      "text": "Table III. Model architecture: DAVE-2 reference network (parameters computed from layer shapes) and the two YOLO11 models (fused, from training logs).",
+      "page": 7
+    },
+    {
+      "text": "Fig. 4. DAVE-2 reference architecture [4]. Arrows show the forward pass; convolutional labels give filters, kernel/stride, and output dimensions (height × width × channels). Dense layers contain 100, 50, 10, and 1 unit.",
+      "page": 8
+    },
+    {
+      "text": "V. Training And Optimization",
+      "page": 9
+    },
+    {
+      "text": "Table IV. Hyperparameters of the three modules (values taken from the logged training configurations).",
+      "page": 10
+    },
+    {
+      "text": "VI. Experimental Design",
+      "page": 10
+    },
+    {
+      "text": "Table V. Recorded training and evaluation comparisons from the project notebooks [36]. Change = observed - reference, at printed log precision.",
+      "page": 11
+    },
+    {
+      "text": "VII. Performance Evaluation",
+      "page": 11
+    },
+    {
+      "text": "VIII. Results",
+      "page": 12
+    },
+    {
+      "text": "Fig. 5. Detection (COCO-10) training: validation metrics (left) and training losses (right) over 50 epochs.",
+      "page": 12
+    },
+    {
+      "text": "Fig. 6. Lane segmentation (TuSimple) training: validation metrics (left) and training losses (right) over 60 epochs.",
+      "page": 12
+    },
+    {
+      "text": "Table VI(a). Main results: detection, COCO-10 (all classes, best.pt).",
+      "page": 13
+    },
+    {
+      "text": "Table VI(b). Main results: lane segmentation (TuSimple, 726 validation frames, 2,732 lanes). No held-out test split exists.",
+      "page": 13
+    },
+    {
+      "text": "Table VI(c). Legacy BGR steering checkpoint audit (n = 505); closed-loop autonomy was not evaluated.",
+      "page": 13
+    },
+    {
+      "text": "Table VII. Class-wise detection results on the held-out test split (AP50-95 on validation shown for comparison).",
+      "page": 13
+    },
+    {
+      "text": "Fig. 7. Per-class AP50-95 on validation (975 images) and held-out test (525 images). Classes with few test instances (stop sign, 22) vary most between splits.",
+      "page": 14
+    },
+    {
+      "text": "Fig. 8. Confusion matrices from the training runs (validation data). (a) Lane model, raw counts (columns: true class, rows: predicted). (b) Detection model, normalised by true class; the bottom row shows missed objects and the right column shows predictions on background.",
+      "page": 14
+    },
+    {
+      "text": "Fig. 9. Lane predictions on six validation frames (conf ≥ 0.25). Three or four lanes are found per frame with confidences of roughly 0.73-0.93, and the masks follow the painted markings, including under overpass shadows and behind a truck. Large overlapping boxes are an artefact of diagonal, thin lanes.",
+      "page": 15
+    },
+    {
+      "text": "Fig. 10. Detection predictions on six held-out test images (conf ≥ 0.25, NMS IoU 0.7), e.g. a cat at 0.91 confidence and buses at 0.94 and 0.86 with several partially occluded persons.",
+      "page": 15
+    },
+    {
+      "text": "Table VIII. Per-image latency on a Tesla T4 (milliseconds, from framework timers) and weight size.",
+      "page": 16
+    },
+    {
+      "text": "IX. Discussion",
+      "page": 16
+    },
+    {
+      "text": "X. Explainability / Interpretability",
+      "page": 17
+    },
+    {
+      "text": "XI. Limitations And Future Work",
+      "page": 17
+    },
+    {
+      "text": "XII. Conclusion",
+      "page": 18
+    },
+    {
+      "text": "XIII. Data Availability",
+      "page": 18
+    },
+    {
+      "text": "XIV. Code Availability",
+      "page": 18
+    },
+    {
+      "text": "XV. Ethical Considerations",
+      "page": 19
+    },
+    {
+      "text": "XVI. Declarations",
+      "page": 19
+    },
+    {
+      "text": "XVII. Steering Readout Experiment",
+      "page": 19
+    },
+    {
+      "text": "Fig. 11. Steering readout experiment. The backbone is frozen; feature normalization and readout parameters are fitted within the original training partition.",
+      "page": 20
+    },
+    {
+      "text": "Table IX. Newly measured steering results on all 9,082 frames of the existing validation partition.",
+      "page": 20
+    },
+    {
+      "text": "Fig. 12. Recorded versus predicted steering angles for all 9,082 validation frames. The dashed line denotes perfect agreement; both panels use the same axes.",
+      "page": 20
+    },
+    {
+      "text": "Fig. 13. A fixed prefix of the first 1,000 validation frames, shown for visual comparison. Table IX and all reported metrics use all 9,082 frames.",
+      "page": 21
+    },
+    {
+      "text": "References",
+      "page": 21
+    }
+  ],
+  "source_event_count": 175,
+  "table_v_evidence": "research_paper/recorded_comparisons.json"
+}

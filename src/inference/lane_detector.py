@@ -63,7 +63,7 @@ class LaneDetector:
             )
 
         from ultralytics import YOLO
-        self.model = YOLO(resolved_path)
+        self.model = YOLO(resolved_path, task="segment")
 
     def detect(
         self,

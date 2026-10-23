@@ -1,0 +1,24 @@
+{
+  "theme": "base",
+  "securityLevel": "loose",
+  "htmlLabels": false,
+  "fontFamily": "Arial, sans-serif",
+  "themeVariables": {
+    "fontFamily": "Arial, sans-serif",
+    "fontSize": "18px",
+    "lineColor": "#63798e",
+    "background": "#ffffff",
+    "primaryTextColor": "#17324f"
+  },
+  "flowchart": {
+    "htmlLabels": false,
+    "curve": "linear",
+    "nodeSpacing": 22,
+    "rankSpacing": 28,
+    "wrappingWidth": 260,
+    "padding": 16,
+    "useMaxWidth": false
+  },
+  "block": { "padding": 24 },
+  "themeCSS": ".nodeLabel { font-family: Arial, sans-serif; } .edgePath .path { stroke-linecap: round; }"
+}

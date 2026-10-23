@@ -1,0 +1,170 @@
+{
+  "assets": {
+    "workflow_original": {
+      "file": "assets\\workflow_original.png",
+      "source_pdf_page": 2,
+      "source_object": "FormXob.e04206f88b888b8c846838b6cf19a7ef.png",
+      "pixels": [
+        1305,
+        603
+      ]
+    },
+    "lane_labels": {
+      "file": "assets\\lane_labels.jpg",
+      "source_pdf_page": 5,
+      "source_object": "FormXob.457e3df3555e435f62fd4b5089a7f599.jpg",
+      "pixels": [
+        1500,
+        880
+      ]
+    },
+    "object_labels": {
+      "file": "assets\\object_labels.jpg",
+      "source_pdf_page": 5,
+      "source_object": "FormXob.a69ebe98ca1889eaa7743ec3ed25daf3.jpg",
+      "pixels": [
+        1500,
+        1062
+      ]
+    },
+    "class_distribution": {
+      "file": "assets\\class_distribution.jpg",
+      "source_pdf_page": 5,
+      "source_object": "FormXob.ff16069b05fdcb4c551d0904429c5f1f.jpg",
+      "pixels": [
+        989,
+        390
+      ]
+    },
+    "steering_architecture_original": {
+      "file": "assets\\steering_architecture_original.png",
+      "source_pdf_page": 7,
+      "source_object": "FormXob.dbe788caab81b801476198d70bee5516.png",
+      "pixels": [
+        1305,
+        552
+      ]
+    },
+    "lane_training": {
+      "file": "assets\\lane_training.png",
+      "source_pdf_page": 11,
+      "source_object": "FormXob.11a64d5d17f93054e0423a174b6abeed.png",
+      "pixels": [
+        1628,
+        616
+      ]
+    },
+    "object_training": {
+      "file": "assets\\object_training.png",
+      "source_pdf_page": 11,
+      "source_object": "FormXob.5b97a1bee5a8dfd8e111eca277580d42.png",
+      "pixels": [
+        1628,
+        616
+      ]
+    },
+    "class_ap": {
+      "file": "assets\\class_ap.png",
+      "source_pdf_page": 12,
+      "source_object": "FormXob.486c5b4f0e44c4d0f50e4f4217103fae.png",
+      "pixels": [
+        1628,
+        638
+      ]
+    },
+    "lane_confusion": {
+      "file": "assets\\lane_confusion.jpg",
+      "source_pdf_page": 13,
+      "source_object": "FormXob.59417cd6fdff6fdeb4d673561f1638a1.jpg",
+      "pixels": [
+        864,
+        768
+      ]
+    },
+    "object_confusion": {
+      "file": "assets\\object_confusion.jpg",
+      "source_pdf_page": 13,
+      "source_object": "FormXob.a0753411b8388a71fa11889c1f3464e9.jpg",
+      "pixels": [
+        1078,
+        981
+      ]
+    },
+    "lane_predictions": {
+      "file": "assets\\lane_predictions.jpg",
+      "source_pdf_page": 14,
+      "source_object": "FormXob.7cf2ee7ed9c67f1a8e1e9774cb504dd2.jpg",
+      "pixels": [
+        1600,
+        1362
+      ]
+    },
+    "object_predictions": {
+      "file": "assets\\object_predictions.jpg",
+      "source_pdf_page": 14,
+      "source_object": "FormXob.b041e0cafd984ba4f3e49ab8f907fee8.jpg",
+      "pixels": [
+        1600,
+        1434
+      ]
+    }
+  },
+  "references": {
+    "1": "SAE International, Taxonomy and definitions for terms related to driving automation systems for on-road motor vehicles, SAE Standard J3016_202104, 2021.",
+    "2": "D. A. Pomerleau, ALVINN: An autonomous land vehicle in a neural network, in Advances in Neural Information Processing Systems 1, 1989, pp. 305-313.",
+    "3": "Y. LeCun, U. Muller, J. Ben, E. Cosatto, and B. Flepp, Off-road obstacle avoidance through end-to-end learning, in Advances in Neural Information Processing Systems 18, 2005.",
+    "4": "M. Bojarski, D. Del Testa, D. Dworakowski, B. Firner, B. Flepp, P. Goyal, L. D. Jackel, M. Monfort, U. Muller, J. Zhang, X. Zhang, J. Zhao, and K. Zieba, End to end learning for self-driving cars, arXiv:1604.07316, 2016.",
+    "5": "L. Chen, P. Wu, K. Chitta, B. Jaeger, A. Geiger, and H. Li, End-to-end autonomous driving: Challenges and frontiers, IEEE Trans. Pattern Anal. Mach. Intell., 2024 (arXiv:2306.16927).",
+    "6": "J. Redmon, S. Divvala, R. Girshick, and A. Farhadi, You only look once: Unified, real-time object detection, in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), 2016, pp. 779-788.",
+    "7": "J. Terven, D.-M. Cordova-Esparza, and J.-A. Romero-Gonzalez, A comprehensive review of YOLO architectures in computer vision: From YOLOv1 to YOLOv8 and YOLO-NAS, Mach. Learn. Knowl. Extr., vol. 5, no. 4, pp. 1680-1716, 2023.",
+    "8": "G. Jocher and J. Qiu, Ultralytics YOLO11, 2024. [Online]. Available: https://github.com/ultralytics/ultralytics",
+    "9": "R. Khanam and M. Hussain, YOLOv11: An overview of the key architectural enhancements, arXiv:2410.17725, 2024.",
+    "10": "M. Bojarski, P. Yeres, A. Choromanska, K. Choromanski, B. Firner, L. Jackel, and U. Muller, Explaining how a deep neural network trained with end-to-end learning steers a car, arXiv:1704.07911, 2017.",
+    "11": "TuSimple, TuSimple lane detection benchmark, 2017. [Online]. Available: https://github.com/TuSimple/tusimple-benchmark",
+    "12": "F. Codevilla, M. Muller, A. Lopez, V. Koltun, and A. Dosovitskiy, End-to-end driving via conditional imitation learning, in Proc. IEEE Int. Conf. Robot. Autom. (ICRA), 2018, pp. 4693-4700.",
+    "13": "H. Xu, Y. Gao, F. Yu, and T. Darrell, End-to-end learning of driving models from large-scale video datasets, in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), 2017.",
+    "14": "F. Codevilla, E. Santana, A. M. Lopez, and A. Gaidon, Exploring the limitations of behavior cloning for autonomous driving, in Proc. IEEE/CVF Int. Conf. Comput. Vis. (ICCV), 2019, pp. 9329-9338.",
+    "15": "S. Ross, G. J. Gordon, and J. A. Bagnell, A reduction of imitation learning and structured prediction to no-regret online learning, in Proc. Int. Conf. Artif. Intell. Stat. (AISTATS), 2011, pp. 627-635.",
+    "16": "S. Ren, K. He, R. Girshick, and J. Sun, Faster R-CNN: Towards real-time object detection with region proposal networks, IEEE Trans. Pattern Anal. Mach. Intell., vol. 39, no. 6, pp. 1137-1149, 2017.",
+    "17": "K. He, G. Gkioxari, P. Dollar, and R. Girshick, Mask R-CNN, in Proc. IEEE Int. Conf. Comput. Vis. (ICCV), 2017, pp. 2961-2969.",
+    "18": "D. Bolya, C. Zhou, F. Xiao, and Y. J. Lee, YOLACT: Real-time instance segmentation, in Proc. IEEE/CVF Int. Conf. Comput. Vis. (ICCV), 2019, pp. 9157-9166.",
+    "19": "Z. Zheng, P. Wang, W. Liu, J. Li, R. Ye, and D. Ren, Distance-IoU loss: Faster and better learning for bounding box regression, in Proc. AAAI Conf. Artif. Intell., 2020, pp. 12993-13000.",
+    "20": "X. Li, W. Wang, L. Wu, S. Chen, X. Hu, J. Li, J. Tang, and J. Yang, Generalized focal loss: Learning qualified and distributed bounding boxes for dense object detection, in Advances in Neural Information Processing Systems 33, 2020.",
+    "21": "X. Pan, J. Shi, P. Luo, X. Wang, and X. Tang, Spatial as deep: Spatial CNN for traffic scene understanding, in Proc. AAAI Conf. Artif. Intell., 2018, pp. 7276-7283.",
+    "22": "D. Neven, B. De Brabandere, S. Georgoulis, M. Proesmans, and L. Van Gool, Towards end-to-end lane detection: An instance segmentation approach, in Proc. IEEE Intell. Veh. Symp. (IV), 2018, pp. 286-291.",
+    "23": "Y. Hou, Z. Ma, C. Liu, and C. C. Loy, Learning lightweight lane detection CNNs by self attention distillation, in Proc. IEEE/CVF Int. Conf. Comput. Vis. (ICCV), 2019, pp. 1013-1021.",
+    "24": "Z. Qin, H. Wang, and X. Li, Ultra fast structure-aware deep lane detection, in Proc. Eur. Conf. Comput. Vis. (ECCV), 2020, pp. 276-291.",
+    "25": "L. Tabelini, R. Berriel, T. M. Paixao, C. Badue, A. F. De Souza, and T. Oliveira-Santos, Keep your eyes on the lane: Real-time attention-guided lane detection, in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR), 2021, pp. 294-302.",
+    "26": "A. Dosovitskiy, G. Ros, F. Codevilla, A. Lopez, and V. Koltun, CARLA: An open urban driving simulator, in Proc. Conf. Robot Learn. (CoRL), 2017, pp. 1-16.",
+    "27": "T.-Y. Lin, M. Maire, S. Belongie, J. Hays, P. Perona, D. Ramanan, P. Dollar, and C. L. Zitnick, Microsoft COCO: Common objects in context, in Proc. Eur. Conf. Comput. Vis. (ECCV), 2014, pp. 740-755.",
+    "28": "M. Abadi et al., TensorFlow: Large-scale machine learning on heterogeneous systems, 2015. [Online]. Available: https://www.tensorflow.org",
+    "29": "F. Chollet et al., Keras, 2015. [Online]. Available: https://keras.io",
+    "30": "G. Bradski, The OpenCV library, Dr. Dobbs Journal of Software Tools, 2000.",
+    "31": "D. P. Kingma and J. Ba, Adam: A method for stochastic optimization, in Proc. Int. Conf. Learn. Represent. (ICLR), 2015.",
+    "32": "R. R. Selvaraju, M. Cogswell, A. Das, R. Vedantam, D. Parikh, and D. Batra, Grad-CAM: Visual explanations from deep networks via gradient-based localization, in Proc. IEEE Int. Conf. Comput. Vis. (ICCV), 2017, pp. 618-626.",
+    "33": "F. Yu, H. Chen, X. Wang, W. Xian, Y. Chen, F. Liu, V. Madhavan, and T. Darrell, BDD100K: A diverse driving dataset for heterogeneous multitask learning, in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR), 2020, pp. 2636-2645.",
+    "34": "A. Geiger, P. Lenz, and R. Urtasun, Are we ready for autonomous driving? The KITTI vision benchmark suite, in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), 2012, pp. 3354-3361.",
+    "35": "H. Caesar, V. Bankiti, A. H. Lang, S. Vora, V. E. Liong, Q. Xu, A. Krishnan, Y. Pan, G. Baldan, and O. Beijbom, nuScenes: A multimodal dataset for autonomous driving, in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR), 2020, pp. 11621-11631.",
+    "36": "Autodrive source code repository. [Online]. Available: https://github.com/HA2345567/Autodrive"
+  },
+  "audit": {
+    "n": 505,
+    "validation_partition": 9082,
+    "stride": 18,
+    "mae_deg": 22.9616,
+    "rmse_deg": 33.235,
+    "bias_deg": 20.9977,
+    "r_squared": -0.8769,
+    "pearson_r": -0.0404,
+    "within_5_deg_pct": 9.11,
+    "recorded_range_deg": [
+      -158.12,
+      68.17
+    ],
+    "predicted_range_deg": [
+      5.648,
+      43.119
+    ],
+    "provenance": "Prior local checkpoint audit in this project session; aggregate results only."
+  }
+}

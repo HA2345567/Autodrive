@@ -41,3 +41,23 @@ runs/
 wandb/
 *.log
 logs/
+
+# Local document builds, dependency links and packaging scratch
+/tmp/
+.chart-data-*/
+node_modules/
+*.tmp
+~$*
+/kernel.errors.txt
+*.egg-info/
+/build/
+/dist/
+
+# Keep costly caches and model-transfer archives local
+/output/transfer/
+/output/steering_audit/frozen_rgb_features.npz
+/output/video/*.predictions.jsonl
+/output/video/*.inspection.json
+/output/video/*_encoded_*.png
+/output/video/*_frame_*.png
+!/output/video/AutoDrive_20s_Demo_Smooth_Steering_encoded_0000.png

@@ -1,0 +1,153 @@
+{
+  "method": "Read saved outputs from project notebooks; no new model execution. Deltas use printed output precision.",
+  "controlled_ablation_results_found": false,
+  "sources": [
+    {
+      "path": "model_training\\train_object_detection\\coco_object_detection_yolo11.ipynb",
+      "sha256": "9bc0bd5c9236ec5e4659b781b426bb9b5443fa20cc39c5eda739197de502c8d3",
+      "recorded_epoch_count": 50
+    },
+    {
+      "path": "model_training\\train_lane_detection\\tusimple_lane_yolo11.ipynb",
+      "sha256": "563f610bde082f2e4b46475ccd1affa74fd4c323348bbb6daa7c01abd5cc187b",
+      "recorded_epoch_count": 60
+    }
+  ],
+  "comparisons": [
+    {
+      "comparison": "Detection: epoch 1 to 50",
+      "metric": "Validation mAP50-95",
+      "reference": "0.331",
+      "observed": "0.482",
+      "delta": "+0.151",
+      "comparison_type": "training progress",
+      "notebook": "model_training\\train_object_detection\\coco_object_detection_yolo11.ipynb",
+      "cell_indices": [
+        27
+      ]
+    },
+    {
+      "comparison": "Lane: epoch 1 to 60",
+      "metric": "Box mAP50-95",
+      "reference": "0.672",
+      "observed": "0.831",
+      "delta": "+0.159",
+      "comparison_type": "training progress",
+      "notebook": "model_training\\train_lane_detection\\tusimple_lane_yolo11.ipynb",
+      "cell_indices": [
+        21
+      ]
+    },
+    {
+      "comparison": "Lane: epoch 1 to 60",
+      "metric": "Mask mAP50-95",
+      "reference": "0.173",
+      "observed": "0.363",
+      "delta": "+0.190",
+      "comparison_type": "training progress",
+      "notebook": "model_training\\train_lane_detection\\tusimple_lane_yolo11.ipynb",
+      "cell_indices": [
+        21
+      ]
+    },
+    {
+      "comparison": "Lane: checkpoint re-evaluation",
+      "metric": "Mask mAP50-95",
+      "reference": "0.363",
+      "observed": "0.389",
+      "delta": "+0.026",
+      "comparison_type": "evaluation variation",
+      "notebook": "model_training\\train_lane_detection\\tusimple_lane_yolo11.ipynb",
+      "cell_indices": [
+        21,
+        25
+      ]
+    },
+    {
+      "comparison": "Detection: validation to test",
+      "metric": "mAP50-95",
+      "reference": "0.4855",
+      "observed": "0.4711",
+      "delta": "-0.0144",
+      "comparison_type": "split comparison",
+      "notebook": "model_training\\train_object_detection\\coco_object_detection_yolo11.ipynb",
+      "cell_indices": [
+        31
+      ]
+    },
+    {
+      "comparison": "Detection: validation to test",
+      "metric": "mAP50",
+      "reference": "0.6883",
+      "observed": "0.6723",
+      "delta": "-0.0160",
+      "comparison_type": "split comparison",
+      "notebook": "model_training\\train_object_detection\\coco_object_detection_yolo11.ipynb",
+      "cell_indices": [
+        31
+      ]
+    }
+  ],
+  "selected_epoch_records": {
+    "detection_epoch_1": {
+      "epoch": 1,
+      "images": 975,
+      "instances": 5604,
+      "metrics": [
+        "0.575",
+        "0.498",
+        "0.51",
+        "0.331"
+      ],
+      "raw_line": "all        975       5604      0.575      0.498       0.51      0.331",
+      "cell_index": 27
+    },
+    "detection_epoch_50": {
+      "epoch": 50,
+      "images": 975,
+      "instances": 5604,
+      "metrics": [
+        "0.757",
+        "0.61",
+        "0.68",
+        "0.482"
+      ],
+      "raw_line": "all        975       5604      0.757       0.61       0.68      0.482",
+      "cell_index": 27
+    },
+    "lane_epoch_1": {
+      "epoch": 1,
+      "images": 726,
+      "instances": 2732,
+      "metrics": [
+        "0.955",
+        "0.953",
+        "0.974",
+        "0.672",
+        "0.744",
+        "0.735",
+        "0.595",
+        "0.173"
+      ],
+      "raw_line": "all        726       2732      0.955      0.953      0.974      0.672      0.744      0.735      0.595      0.173",
+      "cell_index": 21
+    },
+    "lane_epoch_60": {
+      "epoch": 60,
+      "images": 726,
+      "instances": 2732,
+      "metrics": [
+        "0.979",
+        "0.974",
+        "0.992",
+        "0.831",
+        "0.918",
+        "0.919",
+        "0.877",
+        "0.363"
+      ],
+      "raw_line": "all        726       2732      0.979      0.974      0.992      0.831      0.918      0.919      0.877      0.363",
+      "cell_index": 21
+    }
+  }
+}

@@ -1,0 +1,41 @@
+block-beta
+    columns 4
+    I("INPUT<br/>66 × 200 × 3") N("NORMALIZE<br/>x / 127.5 - 1") C1("CONV 1 · ReLU<br/>24 filters · 5×5 / s2<br/>31 × 98 × 24") C2("CONV 2 · ReLU<br/>36 filters · 5×5 / s2<br/>14 × 47 × 36")
+    F("FLATTEN<br/>1,152 features") C5("CONV 5 · ReLU<br/>64 filters · 3×3 / s1<br/>1 × 18 × 64") C4("CONV 4 · ReLU<br/>64 filters · 3×3 / s1<br/>3 × 20 × 64") C3("CONV 3 · ReLU<br/>48 filters · 5×5 / s2<br/>5 × 22 × 48")
+    D1("DENSE 1<br/>100 units") D2("DENSE 2<br/>50 units") D3("DENSE 3<br/>10 units") O("STEERING OUTPUT<br/>1 scalar")
+
+    I --> N
+    N --> C1
+    C1 --> C2
+    C2 --> C3
+    C3 --> C4
+    C4 --> C5
+    C5 --> F
+    F --> D1
+    D1 --> D2
+    D2 --> D3
+    D3 --> O
+
+    classDef input fill:#17324f,stroke:#17324f,color:#ffffff,stroke-width:1.5px;
+    classDef prep fill:#edf2f6,stroke:#7c92a7,color:#263f56,stroke-width:1.5px;
+    classDef conv fill:#eaf2fd,stroke:#4279b5,color:#183b60,stroke-width:1.5px;
+    classDef dense fill:#e6f5f2,stroke:#278f83,color:#14544c,stroke-width:1.5px;
+    classDef output fill:#fff2df,stroke:#c18a38,color:#66471c,stroke-width:1.5px;
+    class I input;
+    class N,F prep;
+    class C1,C2,C3,C4,C5 conv;
+    class D1,D2,D3 dense;
+    class O output;
+
+    style I fill:#17324f,stroke:#17324f,color:#ffffff,stroke-width:1.5px
+    style N fill:#edf2f6,stroke:#7c92a7,color:#263f56,stroke-width:1.5px
+    style F fill:#edf2f6,stroke:#7c92a7,color:#263f56,stroke-width:1.5px
+    style C1 fill:#eaf2fd,stroke:#4279b5,color:#183b60,stroke-width:1.5px
+    style C2 fill:#eaf2fd,stroke:#4279b5,color:#183b60,stroke-width:1.5px
+    style C3 fill:#eaf2fd,stroke:#4279b5,color:#183b60,stroke-width:1.5px
+    style C4 fill:#eaf2fd,stroke:#4279b5,color:#183b60,stroke-width:1.5px
+    style C5 fill:#eaf2fd,stroke:#4279b5,color:#183b60,stroke-width:1.5px
+    style D1 fill:#e6f5f2,stroke:#278f83,color:#14544c,stroke-width:1.5px
+    style D2 fill:#e6f5f2,stroke:#278f83,color:#14544c,stroke-width:1.5px
+    style D3 fill:#e6f5f2,stroke:#278f83,color:#14544c,stroke-width:1.5px
+    style O fill:#fff2df,stroke:#c18a38,color:#66471c,stroke-width:1.5px

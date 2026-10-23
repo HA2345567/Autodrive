@@ -1,0 +1,62 @@
+[
+  {
+    "file": "prototype_display.jpeg",
+    "source": "research_paper/presentation/assets/prototype_display.jpeg",
+    "description": "Original prototype screenshot extracted from the user-supplied minor synopsis PDF; display demonstration only.",
+    "sha256": "1b465b7b9f3a7e42e26613ab2554d2c22af0914622556da7965dc892b93ddac8"
+  },
+  {
+    "file": "object_training.png",
+    "source": "research_paper/assets/object_training.png",
+    "description": "Original object-detection training figure preserved from the supplied research paper.",
+    "sha256": "f1f9d0cb20ff282312eb4a9d6448e0a539c70bcead24b09df1c486db13f04482"
+  },
+  {
+    "file": "lane_training.png",
+    "source": "research_paper/assets/lane_training.png",
+    "description": "Original lane-segmentation training figure preserved from the supplied research paper.",
+    "sha256": "0f24a1e027bae95a60f2537550195d15d23e9606151bbb3cbd1b5f8ab013b761"
+  },
+  {
+    "file": "lane_predictions.jpg",
+    "source": "research_paper/assets/lane_predictions.jpg",
+    "description": "Original lane validation examples preserved from the supplied research paper.",
+    "sha256": "fd85f2c44f024218c7fd718494e7fc642a2b7f7e15f663897941b72e7497c7c3"
+  },
+  {
+    "file": "object_predictions.jpg",
+    "source": "research_paper/assets/object_predictions.jpg",
+    "description": "Original object test examples preserved from the supplied research paper.",
+    "sha256": "0a907137469d4e97e93ddbca104d3f758964d627ebecdef1936944b447ffb179"
+  },
+  {
+    "file": "class_ap.png",
+    "source": "research_paper/assets/class_ap.png",
+    "description": "Original class-wise AP figure preserved from the supplied research paper.",
+    "sha256": "8a88488400beae8336648aced3b0007d9df3c5c573e596d4958eb67be7d233fd"
+  },
+  {
+    "file": "object_confusion.jpg",
+    "source": "research_paper/assets/object_confusion.jpg",
+    "description": "Original object confusion matrix preserved from the supplied research paper.",
+    "sha256": "7cfce2c2a4718df377e5a092363101423ddf83a08cf418ca0202827f3d3968f6"
+  },
+  {
+    "file": "lane_confusion.jpg",
+    "source": "research_paper/assets/lane_confusion.jpg",
+    "description": "Original lane confusion matrix preserved from the supplied research paper.",
+    "sha256": "85546a0eec0c709b7d32da5795d3fe1b9def84ed007858412fc42850f2378898"
+  },
+  {
+    "file": "steering_full_validation_scatter.png",
+    "source": "output/steering_audit/steering_full_validation_scatter.png",
+    "description": "Generated from saved full-validation predictions by research_paper/summarize_steering_experiment.py.",
+    "sha256": "c5364dc60462333ade5670df29fec89804ffc978e5f1b9397291b6c9ca9952eb"
+  },
+  {
+    "file": "steering_validation_sequence.png",
+    "source": "output/steering_audit/steering_validation_sequence.png",
+    "description": "Generated from saved full-validation predictions by research_paper/summarize_steering_experiment.py.",
+    "sha256": "85fae028ed8f12187bccc976a6a1b04641f495fed1449a9da97bac62b7bde1aa"
+  }
+]

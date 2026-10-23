@@ -1,0 +1,12 @@
+{
+  "frame_count": 400,
+  "fps": 20.0,
+  "width": 1280,
+  "height": 720,
+  "state": "complete",
+  "output": "D:\\Documents\\AutoDrive\\output\\video\\AutoDrive_20s_Demo.mp4",
+  "duration_seconds": 20.0,
+  "bytes": 16850079,
+  "per_frame_inference": true,
+  "real_time_benchmark": false
+}

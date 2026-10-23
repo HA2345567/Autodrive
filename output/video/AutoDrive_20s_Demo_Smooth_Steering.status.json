@@ -1,0 +1,15 @@
+{
+  "frame_count": 400,
+  "fps": 20.0,
+  "width": 1280,
+  "height": 720,
+  "state": "complete",
+  "output": "D:\\Documents\\AutoDrive\\output\\video\\AutoDrive_20s_Demo_Smooth_Steering.mp4",
+  "duration_seconds": 20.0,
+  "bytes": 16442318,
+  "per_frame_inference": true,
+  "real_time_benchmark": false,
+  "wheel_animation": "original cockpit EMA",
+  "wheel_alpha_at_20_fps": 0.15,
+  "numeric_ai_output": "unsmoothed"
+}
