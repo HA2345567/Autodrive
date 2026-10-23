@@ -6,9 +6,6 @@
 
 **Object detection · Lane instance segmentation · Steering-angle estimation**
 
-Department of Electronics and Communication Engineering<br>
-Maharaja Surajmal Institute of Technology, New Delhi, India
-
 [Research paper](output/pdf/AutoDrive_Research_Paper_Reference_Style.pdf) · [Presentation PDF](output/presentation/AutoDrive_Final_Presentation_Ready.pdf) · [PowerPoint with demo video](output/presentation/AutoDrive_Final_Presentation_With_Smooth_Video.pptx) · [Detailed results](docs/RESEARCH_RESULTS.md) · [GitHub](https://github.com/HA2345567/Autodrive)
 
 </div>
@@ -472,8 +469,6 @@ Include the linked documentation and output artifacts when publishing this repos
 | Shrishti Singh | [shrisht2723@gmail.com](mailto:shrisht2723@gmail.com) |
 | Rajat Kandpal | [rajatkandpal12@gmail.com](mailto:rajatkandpal12@gmail.com) |
 
-Department of Electronics and Communication Engineering, **Maharaja Surajmal Institute of Technology**, New Delhi, India.
-
 Cite the repository and the specific commit or release used. This is a repository citation, not a claim of journal publication:
 
 ```bibtex
@@ -482,8 +477,7 @@ Cite the repository and the specific commit or release used. This is a repositor
   title        = {AutoDrive: Perception and Steering Research Prototype},
   year         = {2026},
   howpublished = {Source code repository and research artifacts},
-  url          = {https://github.com/HA2345567/Autodrive},
-  note         = {Maharaja Surajmal Institute of Technology, New Delhi, India}
+  url          = {https://github.com/HA2345567/Autodrive}
 }
 ```
 
@@ -503,7 +497,7 @@ Core references also listed in the manuscript:
 
 <div align="center">
 
-**AutoDrive Research Team · MSIT, New Delhi**<br>
+**AutoDrive Research Team**<br>
 [Explore the code](src/) · [Read the results](docs/RESEARCH_RESULTS.md) · [View the paper](output/pdf/AutoDrive_Research_Paper_Reference_Style.pdf)
 
 </div>
