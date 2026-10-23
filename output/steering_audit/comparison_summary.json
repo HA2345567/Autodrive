@@ -1,0 +1,97 @@
+{
+  "validation_n": 9082,
+  "candidate_label": "Frozen CNN + Huber",
+  "metrics": {
+    "Original CNN (RGB)": {
+      "mae_deg": 23.256968295391736,
+      "rmse_deg": 33.63132865887278,
+      "bias_deg": 21.41064848458733,
+      "r_squared": -0.8067434150834731,
+      "pearson_r": 0.05077711663836485,
+      "within_5_deg_pct": 9.821625192688835
+    },
+    "Frozen CNN + Huber": {
+      "mae_deg": 14.6821748422735,
+      "rmse_deg": 26.639480199015985,
+      "bias_deg": 3.123022710269717,
+      "r_squared": -0.13360022422064044,
+      "pearson_r": 0.16816987156512658,
+      "within_5_deg_pct": 31.347720766351024
+    },
+    "Training-mean constant": {
+      "mae_deg": 12.479328753542859,
+      "rmse_deg": 25.050196924355117,
+      "bias_deg": 1.2196394579009862,
+      "r_squared": -0.002376136375197513,
+      "pearson_r": null,
+      "within_5_deg_pct": 42.567716362034794
+    },
+    "Training-median constant": {
+      "mae_deg": 12.689962563312045,
+      "rmse_deg": 25.021179243723342,
+      "bias_deg": -0.1859171988548771,
+      "r_squared": -5.5213790756569736e-05,
+      "pearson_r": null,
+      "within_5_deg_pct": 41.620788372605155
+    }
+  },
+  "bootstrap": {
+    "method": "Circular block bootstrap, block length 100 consecutive validation frames; 1000 replicates; seed 20261021. Intervals depend on the chosen block length.",
+    "intervals": {
+      "Original CNN (RGB)": {
+        "mae_95_ci_deg": [
+          19.67735512310407,
+          27.703084436976546
+        ],
+        "rmse_95_ci_deg": [
+          24.92660227694326,
+          42.874521013460836
+        ]
+      },
+      "Frozen CNN + Huber": {
+        "mae_95_ci_deg": [
+          11.631033398688608,
+          18.62908028529257
+        ],
+        "rmse_95_ci_deg": [
+          18.240835670502115,
+          35.674779692521305
+        ]
+      },
+      "Training-mean constant": {
+        "mae_95_ci_deg": [
+          9.253907487433985,
+          16.664644002471118
+        ],
+        "rmse_95_ci_deg": [
+          16.089351789469823,
+          34.41259529551604
+        ]
+      },
+      "Training-median constant": {
+        "mae_95_ci_deg": [
+          9.462417694340454,
+          16.824163482713058
+        ],
+        "rmse_95_ci_deg": [
+          16.21216237635365,
+          34.24230790167452
+        ]
+      }
+    },
+    "paired_mae_reduction_vs_original_95_ci_deg": [
+      6.848784377872233,
+      10.25006818370681
+    ]
+  },
+  "label_audit": {
+    "training_min_deg": -152.87,
+    "training_max_deg": 501.78,
+    "training_labels_outside_180": 219,
+    "validation_labels_outside_180": 0
+  },
+  "readout_sha256": "8791db9fa322fe9880bf8b494d4fe30fa8c22874855d1922963d0ede6b32b89c",
+  "candidate_beats_original_mae": true,
+  "candidate_beats_both_constant_baselines_mae": false,
+  "candidate_positive_r_squared": false
+}

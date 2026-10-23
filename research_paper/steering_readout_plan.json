@@ -1,0 +1,11 @@
+{
+  "purpose": "Train and assess an actual improved steering readout without changing recorded validation outcomes.",
+  "feature_protocol": "Frozen existing CNN, RGB, crop bottom 150 rows, resize to 200x66, /255, 1152 convolutional features.",
+  "training_stride": 4,
+  "selection": "Minimum MAE on the final 20% block inside the original training partition; refit on all sampled training rows.",
+  "ridge_alphas": [1, 10, 100, 1000, 10000],
+  "huber_candidates": [{"delta_deg": 5, "alpha": 1}, {"delta_deg": 10, "alpha": 1}, {"delta_deg": 10, "alpha": 100}, {"delta_deg": 20, "alpha": 100}],
+  "huber_max_iterations": 200,
+  "reporting": "All 9082 original validation rows, plus training-derived constant baselines; no independent-test or closed-loop claim. The existing validation partition has been examined previously.",
+  "rating": "No guaranteed score; scientific strength depends on measured evidence."
+}

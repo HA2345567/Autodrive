@@ -1,0 +1,157 @@
+[
+  {
+    "slide": 1,
+    "title": "AutoDrive",
+    "appendix": false
+  },
+  {
+    "slide": 2,
+    "title": "Project team and academic guidance",
+    "appendix": false
+  },
+  {
+    "slide": 3,
+    "title": "Presentation outline",
+    "appendix": false
+  },
+  {
+    "slide": 4,
+    "title": "Introduction",
+    "appendix": false
+  },
+  {
+    "slide": 5,
+    "title": "Project objectives",
+    "appendix": false
+  },
+  {
+    "slide": 6,
+    "title": "Literature review",
+    "appendix": false
+  },
+  {
+    "slide": 7,
+    "title": "Integrated AutoDrive architecture",
+    "appendix": false
+  },
+  {
+    "slide": 8,
+    "title": "Datasets and preprocessing",
+    "appendix": false
+  },
+  {
+    "slide": 9,
+    "title": "Perception models",
+    "appendix": false
+  },
+  {
+    "slide": 10,
+    "title": "Steering model and new readout",
+    "appendix": false
+  },
+  {
+    "slide": 11,
+    "title": "Training setup and requirements",
+    "appendix": false
+  },
+  {
+    "slide": 12,
+    "title": "Object detection results",
+    "appendix": false
+  },
+  {
+    "slide": 13,
+    "title": "Lane segmentation results",
+    "appendix": false
+  },
+  {
+    "slide": 14,
+    "title": "Detection training progress",
+    "appendix": false
+  },
+  {
+    "slide": 15,
+    "title": "Lane training progress",
+    "appendix": false
+  },
+  {
+    "slide": 16,
+    "title": "Steering results and baselines",
+    "appendix": false
+  },
+  {
+    "slide": 17,
+    "title": "Lane prediction examples",
+    "appendix": false
+  },
+  {
+    "slide": 18,
+    "title": "Object prediction examples",
+    "appendix": false
+  },
+  {
+    "slide": 19,
+    "title": "Prototype visualization",
+    "appendix": false
+  },
+  {
+    "slide": 20,
+    "title": "Latency and model footprint",
+    "appendix": false
+  },
+  {
+    "slide": 21,
+    "title": "Challenges, applications and next steps",
+    "appendix": false
+  },
+  {
+    "slide": 22,
+    "title": "Conclusion and proof of work",
+    "appendix": false
+  },
+  {
+    "slide": 23,
+    "title": "References",
+    "appendix": false
+  },
+  {
+    "slide": 24,
+    "title": "Appendix A  COCO-10 dataset counts",
+    "appendix": true
+  },
+  {
+    "slide": 25,
+    "title": "Appendix B  Per-class detection results",
+    "appendix": true
+  },
+  {
+    "slide": 26,
+    "title": "Appendix C  Full perception metrics",
+    "appendix": true
+  },
+  {
+    "slide": 27,
+    "title": "Appendix D  Complete steering metrics",
+    "appendix": true
+  },
+  {
+    "slide": 28,
+    "title": "Appendix E  Recorded experimental comparisons",
+    "appendix": true
+  },
+  {
+    "slide": 29,
+    "title": "Appendix F  Training hyperparameters",
+    "appendix": true
+  },
+  {
+    "slide": 30,
+    "title": "Appendix G  Steering experiment protocol",
+    "appendix": true
+  },
+  {
+    "slide": 31,
+    "title": "Appendix H  Reference architecture counts",
+    "appendix": true
+  }
+]

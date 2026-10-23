@@ -1,0 +1,69 @@
+{
+  "title": "AutoDrive : Real-Time Autonomous Driving System Using Computer Vision and Deep Learning",
+  "pages": 13,
+  "figures": [
+    {
+      "caption": "Figure 1. Implemented inference and visualization path. Object boxes, lane masks, and the steering estimate are displayed together. The dashed branch denotes proposed timestamp alignment, safety supervision, and simulated control, which are not part of the evaluated implementation.",
+      "page": 2,
+      "section": "3. System Architecture"
+    },
+    {
+      "caption": "Figure 2. Label verification examples. Left: TuSimple ribbon polygons over a validation frame (green fill and red outlines). Right: COCO-10 boxes drawn from converted YOLO labels. The examples illustrate the two perception targets.",
+      "page": 3,
+      "section": "4.2 Lane centerline-to-ribbon conversion"
+    },
+    {
+      "caption": "Figure 3. COCO-10 training-instance distribution on a logarithmic scale. The most and least frequent classes differ by approximately 24:1 in the project records.",
+      "page": 3,
+      "section": "4.2 Lane centerline-to-ribbon conversion"
+    },
+    {
+      "caption": "Figure 4. Code-aligned steering network. The flattened tensor contains 1,152 features; the first dense layer contains 1,164 units. A scalar affine output z is mapped to 2 atan(z) radians and converted to degrees at inference. Dropout follows the 1,164-unit and 10-unit hidden layers.",
+      "page": 4,
+      "section": "5.2 Implemented steering regressor"
+    },
+    {
+      "caption": "Figure 5. COCO-10 detector learning curves over 50 epochs. Left: validation AP50-95, AP50, precision, and recall. Right: box, classification, and distribution-focal losses. Curves are preserved from the original project records.",
+      "page": 6,
+      "section": "7.1 Object detection"
+    },
+    {
+      "caption": "Figure 6. Per-class AP50-95 on validation (975 images) and held-out test data (525 images). The stop-sign test estimate is based on only 22 instances, so split differences should be interpreted cautiously.",
+      "page": 7,
+      "section": "7.1 Object detection"
+    },
+    {
+      "caption": "Figure 7. Object predictions on six held-out COCO-10 images at confidence \u2265 0.25 and NMS IoU = 0.7. The original examples include large vehicles, partially occluded people, smaller road users, and an animal category.",
+      "page": 7,
+      "section": "7.1 Object detection"
+    },
+    {
+      "caption": "Figure 8. TuSimple ribbon-segmentation learning curves over 60 epochs. Left: box and mask AP50 and AP50-95. Right: box, segmentation, classification, and distribution-focal losses. Loss terms cover box regression, segmentation, classification, and distribution-focal localization.",
+      "page": 8,
+      "section": "7.2 Lane segmentation"
+    },
+    {
+      "caption": "Figure 9. Lane predictions on six TuSimple validation frames at confidence \u2265 0.25. Three or four lanes are detected per frame in these examples, with reported confidences approximately 0.73-0.93. Large overlapping boxes arise from diagonal, thin lane masks.",
+      "page": 9,
+      "section": "7.2 Lane segmentation"
+    },
+    {
+      "caption": "Figure 10. Validation confusion matrices. Left: lane-model raw counts (columns: true class; rows: predicted class). Right: detection matrix normalized by true class. Its bottom row represents missed objects and its rightmost column represents predictions on background.",
+      "page": 10,
+      "section": "7.3 Confusion diagnostics"
+    },
+    {
+      "caption": "Figure 11. Recorded and predicted steering-angle ranges in the same 505-frame validation sample. Recorded angles span -158.12\u00b0 to +68.17\u00b0, whereas predictions remain between +5.65\u00b0 and +43.12\u00b0. The range summary illustrates the observed positive bias.",
+      "page": 11,
+      "section": "7.4 Steering validation audit"
+    }
+  ],
+  "reference_count": 35,
+  "funding": "No external funding",
+  "competing_interests": "None declared",
+  "authors": [
+    "Harsh Bhardwaj",
+    "Shrishti Singh",
+    "Rajat Kandpal"
+  ]
+}

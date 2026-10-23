@@ -1,0 +1,213 @@
+{
+  "method": "Frozen five-convolution backbone with standardized 1152 features and a regularized linear degree head. Loss and penalty selected within training partition.",
+  "protocol": {
+    "total_rows": 45406,
+    "original_training_rows": 36324,
+    "training_stride": 4,
+    "training_samples": 9081,
+    "inner_fit_samples": 7265,
+    "inner_development_samples": 1816,
+    "inner_development_start_row": 29059,
+    "validation_start_row": 36324,
+    "validation_samples": 9082,
+    "selection": "Minimum inner-development MAE; validation labels do not fit or select the readout. RGB fixed from prior training-only calibration.",
+    "limitations": "Existing ordered internal validation split, not an independently collected test set. Checkpoint training exposure and data provenance are not established. No closed-loop vehicle evaluation."
+  },
+  "checkpoint": "saved_models\\regression_model\\model.ckpt",
+  "checkpoint_sha256": "b2db6972852c4922f232ce6e1b20489b24527453d0754fb7ace3354055176216",
+  "dataset_index_sha256": "235c70454d460b86edf1ddb4afba4354529687ad9ca08cb5d7ddfd8f8d4a8bb7",
+  "tuning": [
+    {
+      "alpha": 1.0,
+      "development_metrics": {
+        "n": 1816,
+        "mae_deg": 32.634165575758956,
+        "rmse_deg": 46.035358301654306,
+        "bias_deg": 9.575811180063948,
+        "r_squared": -1.1271314894786948,
+        "pearson_r": 0.21188350079287852,
+        "within_5_deg_pct": 11.618942731277533,
+        "predicted_min_deg": -389.36388121211064,
+        "predicted_max_deg": 621.2577969241629
+      },
+      "loss": "squared"
+    },
+    {
+      "alpha": 10.0,
+      "development_metrics": {
+        "n": 1816,
+        "mae_deg": 32.31569383872525,
+        "rmse_deg": 44.031855286612725,
+        "bias_deg": 9.428996188195049,
+        "r_squared": -0.9460108224461632,
+        "pearson_r": 0.22460670329211038,
+        "within_5_deg_pct": 11.674008810572687,
+        "predicted_min_deg": -350.53598001656286,
+        "predicted_max_deg": 393.7872847204278
+      },
+      "loss": "squared"
+    },
+    {
+      "alpha": 100.0,
+      "development_metrics": {
+        "n": 1816,
+        "mae_deg": 31.104759113415415,
+        "rmse_deg": 41.10511800623483,
+        "bias_deg": 9.260035185632763,
+        "r_squared": -0.6959110897784266,
+        "pearson_r": 0.246321729739447,
+        "within_5_deg_pct": 12.059471365638766,
+        "predicted_min_deg": -331.30228963909894,
+        "predicted_max_deg": 139.3932744291043
+      },
+      "loss": "squared"
+    },
+    {
+      "alpha": 1000.0,
+      "development_metrics": {
+        "n": 1816,
+        "mae_deg": 27.62953732356458,
+        "rmse_deg": 36.17092767856938,
+        "bias_deg": 8.995881628289801,
+        "r_squared": -0.3131990987684268,
+        "pearson_r": 0.29633785038831156,
+        "within_5_deg_pct": 12.334801762114537,
+        "predicted_min_deg": -282.5212495641038,
+        "predicted_max_deg": 125.52574474388429
+      },
+      "loss": "squared"
+    },
+    {
+      "alpha": 10000.0,
+      "development_metrics": {
+        "n": 1816,
+        "mae_deg": 23.49474810236253,
+        "rmse_deg": 30.791046339196303,
+        "bias_deg": 8.511957287732118,
+        "r_squared": 0.04838741685246273,
+        "pearson_r": 0.3668862621594728,
+        "within_5_deg_pct": 14.977973568281937,
+        "predicted_min_deg": -108.48082833340466,
+        "predicted_max_deg": 76.88837714361479
+      },
+      "loss": "squared"
+    },
+    {
+      "delta_deg": 5,
+      "alpha": 1,
+      "loss": "huber",
+      "development_metrics": {
+        "n": 1816,
+        "mae_deg": 22.573488523972053,
+        "rmse_deg": 32.37111349277805,
+        "bias_deg": 0.718249235549075,
+        "r_squared": -0.051783995893285084,
+        "pearson_r": 0.23422698473578377,
+        "within_5_deg_pct": 20.870044052863438,
+        "predicted_min_deg": -159.41116479765222,
+        "predicted_max_deg": 370.08911282951834
+      },
+      "optimizer_success": false,
+      "iterations": 200
+    },
+    {
+      "delta_deg": 10,
+      "alpha": 1,
+      "loss": "huber",
+      "development_metrics": {
+        "n": 1816,
+        "mae_deg": 22.650724774563194,
+        "rmse_deg": 32.74883541730127,
+        "bias_deg": 0.9773483208816601,
+        "r_squared": -0.07647265632163869,
+        "pearson_r": 0.23487982570217328,
+        "within_5_deg_pct": 20.484581497797357,
+        "predicted_min_deg": -142.1064781364637,
+        "predicted_max_deg": 436.8756310496967
+      },
+      "optimizer_success": false,
+      "iterations": 200
+    },
+    {
+      "delta_deg": 10,
+      "alpha": 100,
+      "loss": "huber",
+      "development_metrics": {
+        "n": 1816,
+        "mae_deg": 22.01995883102499,
+        "rmse_deg": 30.473028449118434,
+        "bias_deg": 0.786296198484742,
+        "r_squared": 0.06794290730200614,
+        "pearson_r": 0.3009710413394179,
+        "within_5_deg_pct": 21.090308370044053,
+        "predicted_min_deg": -117.8989524030442,
+        "predicted_max_deg": 68.67166998607128
+      },
+      "optimizer_success": true,
+      "iterations": 134
+    },
+    {
+      "delta_deg": 20,
+      "alpha": 100,
+      "loss": "huber",
+      "development_metrics": {
+        "n": 1816,
+        "mae_deg": 22.377111924463335,
+        "rmse_deg": 30.755964309701643,
+        "bias_deg": 0.954173762918515,
+        "r_squared": 0.05055463662735993,
+        "pearson_r": 0.30719479678805106,
+        "within_5_deg_pct": 19.548458149779734,
+        "predicted_min_deg": -147.38619074802673,
+        "predicted_max_deg": 91.04878277415787
+      },
+      "optimizer_success": true,
+      "iterations": 131
+    }
+  ],
+  "selected_alpha": 100,
+  "validation_metrics": {
+    "n": 9082,
+    "mae_deg": 14.6821748422735,
+    "rmse_deg": 26.639480199015985,
+    "bias_deg": 3.123022710269717,
+    "r_squared": -0.13360022422064044,
+    "pearson_r": 0.16816987156512658,
+    "within_5_deg_pct": 31.347720766351024,
+    "predicted_min_deg": -443.8566165648333,
+    "predicted_max_deg": 63.39423973447577
+  },
+  "original_rgb_validation_metrics": {
+    "n": 9082,
+    "mae_deg": 23.256968295391736,
+    "rmse_deg": 33.63132865887278,
+    "bias_deg": 21.41064848458733,
+    "r_squared": -0.8067434150834731,
+    "pearson_r": 0.05077711663836485,
+    "within_5_deg_pct": 9.821625192688835,
+    "predicted_min_deg": 0.23753827810287476,
+    "predicted_max_deg": 53.156925201416016
+  },
+  "training_mean_baseline_validation_metrics": {
+    "n": 9082,
+    "mae_deg": 12.479328753542859,
+    "rmse_deg": 25.050196924355117,
+    "bias_deg": 1.2196394579009862,
+    "r_squared": -0.002376136375197513,
+    "pearson_r": null,
+    "within_5_deg_pct": 42.567716362034794,
+    "predicted_min_deg": 2.015556656755864,
+    "predicted_max_deg": 2.015556656755864
+  },
+  "model_file": "output\\steering_audit\\improved_readout.npz",
+  "elapsed_seconds": 27.891103267669678,
+  "selected_loss": "huber",
+  "selected_huber_delta_deg": 10,
+  "predictions_file": "improved_validation_predictions.csv",
+  "candidate_label": "Frozen CNN + Huber",
+  "optimizer": {
+    "optimizer_success": true,
+    "iterations": 96,
+    "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+  }
+}

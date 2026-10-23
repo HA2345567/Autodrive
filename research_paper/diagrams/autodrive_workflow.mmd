@@ -1,0 +1,25 @@
+flowchart LR
+    CAM("Front camera<br/>Single road frame")
+    OBJ("Object detection<br/>YOLO11s · 10 classes")
+    LANE("Lane segmentation<br/>YOLO11s-seg")
+    STEER("Steering regression<br/>DAVE-2 / PilotNet")
+    BOX("Road objects<br/>Boxes + classes")
+    MASK("Lane geometry cues<br/>Instance masks")
+    ANGLE("Steering estimate<br/>Predicted angle")
+    HUD("Integrated visual HUD<br/>Perception overlays<br/>Advisory steering display")
+
+    CAM --> OBJ --> BOX --> HUD
+    CAM --> LANE --> MASK --> HUD
+    CAM --> STEER --> ANGLE --> HUD
+
+    classDef input fill:#17324f,stroke:#17324f,color:#ffffff,stroke-width:1.5px;
+    classDef object fill:#eaf2fd,stroke:#4279b5,color:#183b60,stroke-width:1.5px;
+    classDef lane fill:#e6f5f2,stroke:#278f83,color:#14544c,stroke-width:1.5px;
+    classDef steer fill:#f0edfc,stroke:#8770b6,color:#4d397b,stroke-width:1.5px;
+    classDef output fill:#fff2df,stroke:#c18a38,color:#66471c,stroke-width:1.5px;
+    class CAM input;
+    class OBJ,BOX object;
+    class LANE,MASK lane;
+    class STEER,ANGLE steer;
+    class HUD output;
+    linkStyle default stroke:#63798e,stroke-width:1.7px;

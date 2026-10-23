@@ -1,0 +1,16 @@
+{
+  "start": 2400,
+  "frame_count": 400,
+  "fps": 20,
+  "lane_imgsz": 640,
+  "imgsz": 640,
+  "lane_conf": 0.2,
+  "obj_conf": 0.25,
+  "lane_weights": "saved_models/lane_detection_model/lane_detection_best.pt",
+  "object_weights": "saved_models/object_detection_model/object_detection_best.pt",
+  "steering_head": "output/steering_audit/improved_readout.npz",
+  "index_sha256": "235c70454d460b86edf1ddb4afba4354529687ad9ca08cb5d7ddfd8f8d4a8bb7",
+  "lane_weights_sha256": "6a274fd80c4738e66dec7a3c2ba06e400580add0fb0273389276f2c767f18502",
+  "object_weights_sha256": "7d7497461fe3cb07e7bee73eef9d2306b9703ab1cd1d5cd3c728353d5a8bf370",
+  "steering_head_sha256": "8791db9fa322fe9880bf8b494d4fe30fa8c22874855d1922963d0ede6b32b89c"
+}

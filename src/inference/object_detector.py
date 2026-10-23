@@ -55,7 +55,7 @@ class ObjectDetector:
             )
 
         from ultralytics import YOLO
-        self.model = YOLO(resolved_path)
+        self.model = YOLO(resolved_path, task="detect")
         self.class_names = self.model.names or {}
         self.colors = self._generate_colors(len(self.class_names))
 

@@ -1,0 +1,62 @@
+[
+  {
+    "threads": 1,
+    "lane_size": 480,
+    "object_size": 320,
+    "lane": {
+      "wall_ms": 908.8645000010729,
+      "boxes": 3,
+      "masks": 3
+    },
+    "object": {
+      "wall_ms": 318.10110000515124,
+      "boxes": 0,
+      "masks": 0
+    }
+  },
+  {
+    "threads": 1,
+    "lane_size": 640,
+    "object_size": 480,
+    "lane": {
+      "wall_ms": 1747.267799997644,
+      "boxes": 4,
+      "masks": 4
+    },
+    "object": {
+      "wall_ms": 596.0765999989235,
+      "boxes": 1,
+      "masks": 0
+    }
+  },
+  {
+    "threads": 2,
+    "lane_size": 480,
+    "object_size": 320,
+    "lane": {
+      "wall_ms": 1057.5628000005963,
+      "boxes": 3,
+      "masks": 3
+    },
+    "object": {
+      "wall_ms": 360.43470000004163,
+      "boxes": 0,
+      "masks": 0
+    }
+  },
+  {
+    "threads": 2,
+    "lane_size": 640,
+    "object_size": 480,
+    "lane": {
+      "wall_ms": 2216.091800000868,
+      "boxes": 4,
+      "masks": 4
+    },
+    "object": {
+      "wall_ms": 849.0853000039351,
+      "boxes": 1,
+      "masks": 0
+    }
+  }
+]
